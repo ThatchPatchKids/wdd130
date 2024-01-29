@@ -1,0 +1,93 @@
+/*This is called a ruleset?*/
+body {   /* body is the selector. Within the curly braces are the declarations or property-value pairs that will apply to the element (body).*/
+    background-color: seagreen;   /* background-color is the property name, seagreen is the value.*/
+}
+
+h1 {
+    color:blue;
+    font-size: 30px;
+    text-align:center;
+    margin-bottom: 35px;
+}
+a {
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+/*-------------------------------*/
+/*          Precedence           */
+/*-------------------------------*/
+/*inline CSS overrides embedded and embedded CSS overrides external*/
+/*-------------------------------*/
+/*          Inheritance          */
+/*-------------------------------*/
+/*The children elements will inherit some of the declarations from the parent element.*/
+
+
+/*-------------------------------*/
+/*             Fonts             */
+/*-------------------------------*/
+/*Web-safe fonts: Can be used on any browser and dont need to be installed on a users computer or imported.*/
+/*Importing or downloading fonts. You can do that from websites like, Font Squirrel or Google Fonts.*/
+
+/*This should be at the top of the CSS file, before any of other styles.*/
+/*Use this to import the link to a font you're using*/
+@import url('Name of the link/path to the font.');
+
+/*Use this to import a font from a file. This should also be at the top of a CSS file before any styles.*/
+@font-face {
+    font-family: "Rock Salt";
+    src: url(fonts/RockSalt-Regular.ttf);
+}
+/*
+body {
+    font-family: 1st choice, 2nd choice, 3rd choice;
+}    
+*/
+/*-------------------------------*/
+/*             Color             */
+/*-------------------------------*/
+/*3 ways colors are recognized in CSS.
+
+1. Names 
+    e.g. blue, black, white, green, etc.
+2. Hex Codes
+    This represent the amount of Red, Green, and Blue in a color.
+    first two digits are the amount of red, second two digits are the amount of green, third two digits are the amount of blue.
+    # FF = The highest value, 00 is the lowest. (Hex is 0-9 a-f or just 0-f).
+    e.g. #000000 (black), #FFFFFF (white), #FF0000 (red), #00FF00 (green), #0000FF (blue)
+3. RGB values
+    rgb(0-255,0-255,0-255)
+    rgb(0,0,0) = Black, rgb(255,255,255) = white, rgb(255,0,0) = red, rgb(0,255,0) = green, rgb(0,0,255) = Blue
+    You can add an alpha value which lets you specify the opacity of the element 
+    rgba(0-255,0-255,0-255,0.0-1.0)
+    e.g. rgba(0,255,0,0.2) 0.0 = totally see through, 1.0 = totally opaque or solid. 
+
+Watch out for a high enough contrast between foreground and background colors.
+*/
+
+/*-------------------------------*/
+/*   Classes and ID Attributes   */
+/*-------------------------------*/
+
+/*Put a dot in front of the class name, this will only apply to the class named "shaded"*/
+
+.shaded {
+    background-color: #ccc;
+}
+
+/*This looks for the id named "myheader"*/
+#myheader {
+    font-family: 'Lemon', 'sans-serif';
+    font-size: 45px;
+    color: aqua;
+}
+
+/*Adding multiple classes to the same HTML element?*/
+
+
+
+
+
+
