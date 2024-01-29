@@ -87,7 +87,107 @@ Watch out for a high enough contrast between foreground and background colors.
 /*Adding multiple classes to the same HTML element?*/
 
 
+/*-------------------------------*/
+/*     Units of Measurement      */
+/*-------------------------------*/
 
+/*width:, margin:, font-size:
+px, dm, % 
+Absolute units, always the same size, regardless of the page size.
+    e.g. px (pixel size)
+Relative units, their size can change based on the page or font-size or device/screen size. These scale better across devices.
+    e.g. em or %
 
+rem vs em?
+1em = 100% of the default font size
+1.5em = 150%, 
+vw (viewport width)?
+vh (viewport height)?
+min-width and max-width for limiting size when zooming in or out.
+*/
 
+/*-------------------------------*/
+/*   Block and Inline Elements   */
+/*-------------------------------*/
 
+/*Block elements do not allow other elements to share the line they are on.
+
+Inline elements will allow other elements to share a line as long as their is room.
+
+The display: inline declaration can turn a block element into an inline element.
+The display: block declaration can turn an inline element into a block element.
+
+The display: inline-block declaration can turn a block element into an inline element while maintaining 
+some of the characteristics of a block element.
+*/
+
+/*-------------------------------*/
+/*           Centering           */
+/*-------------------------------*/
+
+/*text-align: center vs margin: 0 auto
+    text-align: center will center the contents within a box.
+
+    margin: 0 auto will center the box itself.*/
+
+/*-------------------------------*/
+/*  CSS Selectors & Specificity  */
+/*-------------------------------*/
+
+/*Element name selectors, ID and Class selectors
+
+Specificity
+    Ranked from most specific to least:
+    Most specific overwrite less specific.
+    Most:  ID selectors
+           Class selectors
+           pseudo-class selectors
+    Least: element name selectors
+*/
+
+/*All the h1 and h4 elements will have the same declarations.*/
+h1, h4 {
+    font-family: 'Lemon', 'sans-serif';
+}
+
+/*You can get more specific with descendent CSS selectors.
+For example:*/
+article p {
+    line-height: 1.5em;
+}
+/*Here we target all of the <p> elements within the article element.
+
+Another example:*/
+
+#product_gallery img {
+    width: 50%;
+}
+/*Here we target all of the images within our product gallery.
+
+more examples:*/
+
+main img {
+    width: 40%;
+}
+/*Here we target all of the images within the main element.*/
+
+#img_container img {
+    width: 40%;
+}
+/*Here we target all of the images within the img_container ID.*/
+
+/*More selectors:*/
+
+li:nth-of-type(2) {
+    background-color: #ccc;
+}
+/*Here we select the second li element, assuming we have more than one.*/
+
+nav a:hover {
+    color: black;
+    background-color: #ccc;
+}
+button:hover {
+    background-color: beige;
+}
+/*Now when you hover over these elements on the page the element will change with the new declarations.*/
