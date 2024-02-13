@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tron Gaming</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #000;
+            border-bottom: 2px solid #0ff;
+        }
+
+        h1 {
+            font-size: 2em;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            margin: 0;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav a {
+            color: #0ff;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00f;
+        }
+
+        main {
+            padding: 40px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+        }
+
+        .game-container {
+            margin-bottom: 40px;
+        }
+
+        .game-title {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .game-preview {
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+        }
+
+        /* Add more styles for additional elements as needed */
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tron Gaming</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#game1">Game 1</a>
+            <a href="#game2">Game 2</a>
+            <!-- Add more navigation links for additional games -->
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Tron Gaming!</h2>
+            <!-- Add any introductory text or images here -->
+        </section>
+
+        <section id="game1" class="game-container">
+            <h2>Game 1</h2>
+            <div class="game-title">Title of Game 1</div>
+            <iframe class="game-preview" src="game1/index.html" frameborder="0"></iframe>
+            <!-- Replace "game1/index.html" with the actual path to your first game -->
+        </section>
+
+        <section id="game2" class="game-container">
+            <h2>Game 2</h2>
+            <div class="game-title">Title of Game 2</div>
+            <iframe class="game-preview" src="game2/index.html" frameborder="0"></iframe>
+            <!-- Replace "game2/index.html" with the actual path to your second game -->
+        </section>
+
+        <!-- Add more sections for additional games -->
+
+    </main>
+</body>
+</html>
+
+
+       
