@@ -1,0 +1,24 @@
+
+/*.classname {
+    property: value
+}*/
+
+.shaded {
+    background-color: #ccc;
+}
+
+.emphasize {
+    /**/
+    font-weight: bold;
+    color: darkred;
+}
+
+/*#IDName {
+    property: value
+}*/
+
+#main-topic {
+    font-family: 'Lemon', 'Bradley Hand', sans-serif;
+    font-size: 45px;
+    /* color: #4b4b2a; */
+}

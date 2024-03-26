@@ -1,0 +1,100 @@
+To-Do:
+    > Review Colors and Typography for my personal and rafting websites.
+    > Role of a Frontend Developer
+    > Role of a Backend Developer
+
+
+Vocab:
+---------------- Week 1 ----------------
+    > Hyperlink
+    > Hyper Text Markup Language (HTML)
+    > Elements
+    > Tags e.g. <a> tag, and a element. Whats the difference between a tag and an element?
+    > Attributes (name value pair) e.g. href (name) = "index.html" (value)
+    > URL, Web Address
+    > hypertext reference (href)
+    > Parent and Children Elements
+    > Source attribute (src)
+    > Alternative Text attribute (alt), always include an alt attribute with every image!
+    > HTML skeleton
+    > Meta Tags? <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    > Semantics = You can tell what kind of content it is by the element used.
+    > Semantic Tags - Describe the content you are adding to the page? E.g. <img> tag means you will display an image, <a> tag means a hyperlink, etc.
+    > Cascading Style Sheets (CSS) Rule-based language?
+    > Inline CSS - <body style="background-color: lightblue"> Using CSS within HTML tags. Not preferred because there's no code reusability.
+    > Embedded CSS - Embed CSS within the head section of your HTML page using <style> tags. Not preferred, no CSS reusability across pages.
+    > Seperate CSS file; External CSS. This is the preferred way to use CSS. Always keep CSS and HTML separate. Now different web pages can share the same style sheet.
+    > The link element - contains the relationship (rel) attribute and the href attribute
+---------------- Week 2 ----------------
+    > Hosting (web pages)
+    > How to plan a website? 
+    > Practice looking critically at websites?
+    > Color and Typography?
+    > GitHub Pages?
+    > CSS Precedence? - If 2 or more rules are applied to an element, which will take precedence? Inline CSS overwrites Embedded CSS and Embedded CSS overwrites External CSS.
+    > CSS Inheritance? - The children elements of an element will inherit some of the declarations applied to the parent element.
+    > Selectors? The element being selected for a CSS rule-set?
+    > Declarations or Property-Value pairs? 
+    > Set of declarations or declarations block? = {}
+---------------- Week 3 ----------------
+    > Wireframes?
+    > HTML troubleshooting techniques? Validation? 
+    > Image optimization techniques?
+    > Class and ID attributes?
+    > <p class="anyname"> - class is used in the beginning tag of an HTML element. .anyname { color: green;} The class value can be used as a selector to target that specific element.
+    > <h1 id="main-topic"> My Title Here </h1> The ID attribute is used to uniquely identify that element from others on the page. You cannot reuse ID's on other elements. Each ID can only be used once.
+    > . for classes and # for id's 
+    > HTML File guidelines? styles folder, index.html, img folder, what else?
+---------------- Week 4 ----------------
+    > px vs em vs % - You can use em for fonts, margins, heights, wifths, padding, etc. It's based on an inherited font size. 
+    > Absolute units - The size is always the same regardless of the page size e.g. px 
+    > Relative units - their size can change based on something else, like the page or font size. e.g. em or %
+    > Responsiveness
+    > rem vs em? 1em = 100% the size of the inherited size. 1.5em would be 150% the size of the inherited size.
+    > vw vs vh - 
+    >  max-width and min-width 
+    > block vs inline elements? 
+    > div, header, main, footer, nav, p, ul, li, section, article, form, and h1-h6 are block elements
+    > a, img, span, button, label, etc. are inline elements
+    > the display attribute?
+    > display: inline-block; ?
+    > Centering Elements: text-align: center; vs margin: 0 auto; ? - text-align: center will center the text/ content within an element. margin: 0 auto will center the elements box itself.
+    > Specificity? - specifying the element we're selecting with CSS. Children elements inherit CSS rules, but if theres a CSS rule applied to a child element, it will overwrite the inherited rules because it is more specific.
+    > Specificity Hierarchy - Inline styles have a high ranking. ID selectors are next, then classes and pseudo-classes. Element selectors are the least specific.
+    > CSS Selectors: Element name selectors, ID selectors, class selectors, 
+    > Pseudo-classes and Pseudo-selectors? e.g. li:nth-of-type(2) {} ? If you have multiple of the same elements, you can use nth-of-type without an ID or class to target the 2nd or 3rd of that element.
+    > descendent CSS selectors? e.g. article p {} the descendent is the last element (p)
+    > #product_gallery img {} example of targeting the images that are children elements within the parent element containing the class name product_gallery??
+    > .card-img:hover?
+---------------- Week 5 ----------------
+    > The Box Model
+    > Padding, Borders, Margins
+    > Padding - adds white space around the element. Border - needs 3 values to be visible: width, style, and color. e.g. border: 5px solid black;
+    > Margin - provides space between elements
+    > padding: 1st value 2nd value; 1st value - goes to top and bottom of box, 2nd value goes to left and right of box
+    > padding: topValue rightValue bottomValue leftValue; or margin-top, margin-bottom, margin-right, margin-left also, padding-top, padding-bottom, padding-right, padding-left
+                                 _______________________________
+                                |            Margin             |
+                                |   _________________________   |
+                                |   |        Border         |   |
+                                |   | _____________________ |   |
+                                |   | |      Padding      | |   |
+                                |   | |    ___________    | |   |
+                                |   | |    | CONTENT |    | |   |
+                                |   | |    |_________|    | |   |
+                                |   | |                   | |   |
+                                |   | |___________________| |   |
+                                |   |_______________________|   |
+                                |                               |
+                                |_______________________________|
+    > box-sizing property e.g. box-sizing: border-box; = border and padding will be the same size as the content box?
+    > How to use the inspect tool in Chrome?
+---------------- Week 6 ----------------
+    > Hero image and message? Whats the role of a hero image? - to welcome visitors with the first glimpse of your company or organization
+    > When to use a section or a div? a section is a thematic grouping of content, typically with a heading
+    > "hot linking"?
+    > target="_blank" attribute has links open a new tab.
+    > Block Elements are centered by setting a width and adjusting the left and right margin. Inline Elements are centered using the text-align property.
+    > Setting properties to zero is sometimes called "reset"/ 
+    > As you add margins, if two elements by each other both have top and bottom margins, the browser collapses the smaller margin and keeps the larger.
+    > 

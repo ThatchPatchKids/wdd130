@@ -1,0 +1,66 @@
+
+main {
+    text-align: center;
+}
+
+.plain {
+    background-color: yellow;
+}
+
+.padding {
+    background-color: yellow;
+    padding: 20px;
+}
+
+.border {
+    background-color: lightskyblue;
+    border: 5px solid black;
+}
+
+.padding-border {
+    background-color: lightskyblue;
+    padding: 20px;
+    border: 3px solid black;
+}
+
+.double {
+    background-color: lightcoral;
+    padding: 20px;
+    border: 5px double black;
+}
+.dashed {
+    background-color: lightcoral;
+    padding: 20px;
+    border: 5px dashed black;
+}
+.dotted {
+    background-color: lightcoral;
+    padding: 20px;
+    border: 5px dotted black;
+}
+.rounded {
+    background-color: lightgrey;
+    padding: 10px;
+    border-radius: 5px;
+}
+.rounded-visible {
+    background-color: lightgrey;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.circles {
+    text-align: center;
+}
+
+.circle {
+    background-color: lightgreen;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline;
+    margin: 10px;
+}
