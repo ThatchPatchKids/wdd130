@@ -1,139 +1,321 @@
 /*External Style Sheet for Home Page*/
 
+/*Importing the fonts for this page.*/
+@import url();
+/*Have the fonts for the cards sans-seriff*/
 
-/**/
+
+/*CSS ruleset for the div element that wraps around the entire page, i.e., the entire contents of the body.*/
 #content {
+    /*Setting a max-width keeping the whole page from stretching across the whole browser window on large monitors.
+      No element on this page can be wider than this.*/
     max-width: 1600px;
+
+    /*Centering our content/page.
+      Tell the browser to take whatever margin is available and split it between the left and right of the element.
+      The first value, 0, sets the top and bottom margins to 0 and the second value, auto, sets the left and right margins to auto: 
+      meaning to split any margin available between the left and right.*/
     margin: 0 auto;
 }
 
-/**/
-.home-title {
-    color: #ffd95c;
+/*CSS ruleset for the <a> elements within the <nav> element in our <header> element, i.e., this ruleset applies to the <a> elements that
+  are children to the <nav> element that is a child to the parent <header> element.*/
+nav a {
+    /*Centering the <a> elements within the parent <nav> element.
+      These are our links to other pages in the pages header.*/
+    text-align: center;
+
+    /*Set the font color.*/
+    color: black;
+
+    /*Take the underline off of the link by setting this property to none.*/
+    text-decoration: none;
+
+    /*Add padding to this element.*/
+    padding: 35px;
 }
 
-/**/
-
-
-/**/
-nav a {
+/*CSS ruleset for the <h1> element within the <section> element thats in the "hero" div, i.e., the <h1> element is the child
+  to the parent <section id="hero-msg"> element that is a child to the parent <div id="hero"> element.*/
+#hero-msg h1 {
+    /*Centering the <h1> element withint the parent <section> element.
+      This is primary message below the header?*/
     text-align: center;
-    color: #ffd95c;
+}
+
+/*CSS ruleset for the <h4> element that is below the <h1> element above.*/
+#hero-msg h4 {
+    /*Centering the <h4> element withint the parent <section> element.
+      This is the message below the primary message?*/
+    text-align: center;
+}
+
+/*CSS ruleset for the <div class="button-box"> element. This has a child element <a> that is a link to 
+  the contact us page. Appears as a "button box" below the above <h4> element.*/
+.button-box {
+    /*Centering the contents of the <div> element, i.e., centering the <a> element within the <div>.*/
+    text-align: center;
+}
+
+/*CSS ruleset for all of the <section> elements within the parent element <main>.*/
+main section {
+    /*Centering the contents of the <section> elements.*/
+    text-align: center;
+}
+
+/*CSS ruleset for the empty <div> element before the mountains img*/
+#background {
+    /*Set the height of the <div> element to 725 pixels.*/
+    height: 725px;
+    /*Setting a background color for the <div> element.*/
+    background-color: #fcfbfb;
+}
+
+/*CSS ruleset for the <body> element.*/
+body {
+    /*Setting a background color for the entire page?*/
+    background-color: #fcfbfb;
+    /*Set the font for the body.*/
+    font-family: ;
+    /*Set the font size for the whole page.*/
+    font-size: 22px;
+    /*Get rid of the browsers default margin. Reset the property by setting it to zero.*/
+    margin: 0;
+    /*Get rid of the browsers default padding. Reset the property by setting it to zero.*/
+    padding: 0;
+}
+
+/*CSS ruleset for all of the <h2> elements.*/
+h2 {
+  /*Get rid of the browsers default margin. Reset the property by setting it to zero.*/
+  margin: 0;
+}
+
+/*CSS ruleset for the <header> element.*/
+header {
+    /*Setting a background color for the <header> element,
+                             red green blue a?
+                             20    30   13  0.7*/
+    background-color: rgba(20,30,13, .7);
+}
+
+/*CSS ruleset for the children elements <a> of the parent element <nav> within the pages header.
+  This applies to the <a> elements as the mouse hovers over them.*/
+nav a:hover {
+    /*Set a background color for the <a> element to change to when the mouse hovers over it.*/
+    background-color: black;
+
+    /*Set the font color for the text to change to when the mouse hovers over it.*/
+    color: white;
+}
+
+/*CSS ruleset for the <a> element within the "button-box" <div> element. This is a link to the 
+  contact us page and appears as a "button box".*/
+.book {
+    /*Set a background color for the "box" that acts as a link.*/
+    background-color: #d9c2a3;
+    /*Set the font color.*/
+    color: black;
+    /*Take the underline off of the link by setting this property to none.*/
+    text-decoration: none;
+    /*Set the font size.*/
+    font-size: 18px;
+    /*Add padding to this element.*/
+    padding: 15px 30px;
+    /*Set the margin of the top of this element.*/
+    margin-top: 50px;
+    /**/
+    border-radius: 5px;
+}
+
+/*CSS ruleset for the <a> child element of the parent element <section class="msg">.
+  This appears at the bottom of the page as a box below the message.*/
+.join {
+    /*Set a background color for the "box" that acts as a link.*/
+    background-color: #d9c2a3;
+    /*Set the font color.*/
+    color: black;
+    /*Take the underline off of the link by setting this property to none.*/
+    text-decoration: none;
+    /*Set the font size.*/
+    font-size: 18px;
+    /*Add padding to this element.*/
+    padding: 15px 30px;
+    /*Set the margin of the top of this element.*/
+    margin-top: 50px;
+    /**/
+    border-radius: 5px;
+}
+
+/*CSS ruleset for the child element <a> of the parent element <div class="button-box".
+  This applies to the <a> element as the mouse hovers over it.*/
+.book:hover {
+    /*Set a background color for the <a> element to change to when the mouse hovers over it.*/
+    background-color: black;
+    /*Set the font color.*/
+    color: white;
+}
+
+/*CSS ruleset for the <a> child element of the parent element <section class="msg">
+  This applies to the <a> element as the mouse hovers over it.*/
+.join:hover {
+    /*Set a background color for the <a> element to change to when the mouse hovers over it.*/
+    background-color: black;
+    /*Set the font color.*/
+    color: white;
+}
+
+/*CSS ruleset for the <section> element, the last child of the <main> element.*/
+.msg {
+    /*Set a background color for the <section> element.
+      This appears above the pages footer.*/
+    background-color: #fcfbfb;
+    /*Give this element one and half times more space between lines.*/
+    line-height: 1.5em;
+    /*Add padding to this element.*/
+    padding: 35px;
+}
+
+/*CSS ruleset for the <footer> element.*/
+footer {
+    /*Set a background color for the <footer> element.*/
+    background-color: #fcfbfb;
+    /*Set the font color.*/
+    color: black;
+    /*Add padding to this element.*/
+    padding: 25px 50px; 
+    /**/
+    margin-top: 200px;
+}
+
+/*CSS ruleset for the child element <h1> of the parent element <section id="hero-msg">.
+  This is the welcoming message at the top of the page.*/
+.home-title {
+    /*Set the font color.*/
+    color: black;
+    /*Set the font using the headlines font.*/
+    font-family: sans-serif;
+    /*Set the font size to twice as big as our pages default font size.*/
+    font-size: 2em;
+    /*Using margin to space out the content on the page beyond the borders of the elements. 
+      Set the margin of the top of this element.*/
+    margin-top: 10px;
+}
+
+/*CSS ruleset for the <h4> element below the <h1> element above. This 
+  is the part of the welcoming message at the top of the page.*/
+h4 {   /*We have two rules applying to this element, should we change this?*/
+    /*Set the font color.*/
+    color: black;
+}
+
+/*CSS ruleset for the <h2> child element of the <section class="msg"> parent element.
+  This is the heading of the message at the bottom of the page.*/
+.msg h2 {   /*Theres a ruleset for h2 with margin: 0;, does that affect this element? Does this ruleset reset the margin?*/
+    /*Set the font color.*/
+    color: black;
+    /*Set the font using the headlines font.*/
+    font-family: sans-serif;
+}
+
+/*CSS ruleset for the <p> child element of the <section class="msg"> parent element.
+  This is the message at the bottom of the page.*/
+.msg p {
+    /*Set the font color.*/
+    color: black;
+    /*Set the font size to 80% of our default font size.*/
+    font-size: 0.8em;
+    /*Add padding to this element.*/
+    padding-bottom: 15px;
+}
+
+/*CSS ruleset for all of the <a> children elements of the parent <footer> element.
+  These links appear in the pages footer.*/
+footer a {
+    /*Set the font color.*/
+    color: #d9c2a3;
+    /*Take the underline off of the link by setting this property to none.*/
     text-decoration: none;
 }
 
-/**/
-nav a:hover {
-    background-color: #1c448e;
-    color: #ffd95c;
+/*CSS ruleset for all of the <a> children elements of the parent <footer> element.
+  This applies to the <a> elements as the mouse hovers over them.*/
+footer a:hover {
+    /*Set the font color.*/
+    color: #d9c2a3;
 }
 
-/**/
-#hero-msg h1, h4 {
-    text-align: center;
-    color: black;
+/*CSS ruleset for our logo image.*/
+.logo {
+    /*Set a width of 80 pixels for the image.*/
+    width: 80px;
+}
+
+/*CSS ruleset for our card icons.*/
+.icon {
+    /*Set a width of 80 pixels for the image.*/
+    width: 80px;
+    /*Add padding to this element.*/
+    padding: 10px;
+}
+
+/*CSS ruleset for our hero image, the <img> element is the child of the <div id="hero-box"> element.
+  This is the large rafting photo at the top of the page.*/
+#hero-img {
+    /*Set a width to 100% of the elements space??*/
     width: 100%;
 }
 
-/**/
-.button-box {
-    text-align: center;
-}
-
-/**/
-main section {
-    text-align: center;
-}
-
-/**/
-#background {
-    height: 725px;
-    background-color: #1c448e;
-}
-
-/**/
-body {
-    background-color: #5aa9e6;
-}
-
-/**/
-header {
-    background-color: #5aa9e6;
-}
-
-/**/
-.book {
-    background-color: #5aa9e6;
-    color: black;
-    text-decoration: none;
-}
-
-/**/
-.join {
-    background-color: #5aa9e6;
-    color: black;
-    text-decoration: none;
-}
-
-/**/
-.book:hover {
-    background-color: #5aa9e6;
-    color: #ffd95c;
-}
-
-/**/
-.join:hover {
-    background-color: #5aa9e6;
-    color: #ffd95c;
-}
-
-/**/
-.msg {
-    background-color: #fbf9ff;
-}
-
-/**/
-.msg h2 {
-    color: #1c448e;
-}
-
-/**/
-.msg p {
-    color: #1c448e;
-}
-
-/**/
-footer {
-    background-color: #fbf9ff;
-    color: #5aa9e6;
-}
-
-/**/
-footer a {
-    color: #1c448e;
-    text-decoration: none;
-}
-
-/**/
-footer a:hover {
-    color: #fbf9ff;
-}
-
-/**/ footer p {
+/*CSS ruleset for the <p> child element of the <footer> parent element.*/
+footer p {
+    /*Set the font size of the footer text.*/
     font-size: 1.2em;
 }
 
-/**/
+/*CSS ruleset for the <a> elements within the <p> elements that are the <footer>s children elements.*/
 footer p a:hover {
+    /*Add the underline value to these elements.*/
     text-decoration: underline;
 }
 
-/**/
-.logo {
-    width: 80px;
+/*CSS ruleset for the logos link, i.e., the first <a> element in the header.*/
+#logo_link {
+    /**/
+    padding-top: 5px;
+}
+
+/*CSS ruleset for */
+footer .social img {
+    /*Add padding to this element.*/
+    padding-top: 15px;
 }
 
 /**/
-.icon {
-    width: 80px;
+.rivers-card {
+    /**/
+    margin: 200px 0;
+}
+
+/**/
+.camping-card {
+    /**/
+    margin: 200px 0;
+}
+
+/**/
+.rapids-card {
+    /**/
+    margin: 200px 0;
+}
+
+/**/
+.card-img {
+    /**/
+    border: 10px solid #d9c2a3;
+}
+
+/**/ 
+main section img {
+    /**/
+    box-sizing: border-box;
 }
