@@ -1,0 +1,57 @@
+
+
+body {
+    background-color: #5ca1d7;
+    padding: 10px;
+}
+
+#header {
+    text-align: center;
+}
+
+#header h1 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 50px;
+}
+
+#header h1:hover {
+    color:black;
+}
+
+#header p {
+    color: white;
+}
+
+#header p:nth-of-type(3) {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#main {
+    text-align: center;
+}
+
+#main p {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#main img {
+    width: 250px;
+}
+
+#main h1 {
+    color: white;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#footer {
+    text-align: center;
+}
+
+#footer p {
+    margin: 0 auto;
+}

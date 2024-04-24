@@ -97,4 +97,30 @@ Vocab:
     > Block Elements are centered by setting a width and adjusting the left and right margin. Inline Elements are centered using the text-align property.
     > Setting properties to zero is sometimes called "reset"/ 
     > As you add margins, if two elements by each other both have top and bottom margins, the browser collapses the smaller margin and keeps the larger.
+    > Flexbox layouts for the nav links and the footer?
+    > Remember, grids can be constructed either explicitly: you define everything about the grid, column number and widths, row number and heights, and where every item should be placed, or implicitly: you let the browser make as many of the decisions as possible. Most grids are a mix of both. All grids need to have some columns defined, but after that, the browsers will implicitly create rows as needed.
+    > https://www.w3schools.com/css/css3_transitions.asp
+    > https://www.w3schools.com/cssref/css3_pr_box-shadow.php
+    > https://css-tricks.com/snippets/css/a-guide-to-flexbox/#justify-content
     > 
+    > With the grid, you need to specify how many columns it needs with the grid-template-columns property
+    > To get the children of the grid container placed properly you can specify how many columns an element should span with the grid-column property
+    > grid-column, you specify the column by describing the grid lines it falls between. E.g. if you want something in column one you would place it between lines 1 and 2. If you wanted it to take up two columns you would place it between lines 1 and 3
+    > Horizontal alignment is controlled with the justify- properties. 
+    > The gap property can be used to add some space between a grids rows and columns.
+    > https://www.w3schools.com/cssref/pr_pos_z-index.php
+    > https://css-tricks.com/snippets/css/complete-guide-grid/#aa-grid-properties
+    > 
+    > 
+Tips
+ 1. Don't overuse position. At first, it might seem to be the answer to your positioning prayers, but it can quickly become a nightmare if overused. Try to solve layout problems with other methods first and fallback to position only if they don't work.
+ 
+ 2. Remember that margin is a great way to shift things around short distances (and margin-top: -50px; would move an element up by 50px).
+ 
+ 3. When using float remember that the element that you are floating must come before the other elements in the HTML. Also remember to clear your floats when you want things to stop floating.
+ 
+ 4. CSS Grid is a great way to position elements. Most of these can be most easily solved by using it. Remember that to use CSS Grid, first find the elements you want to adjust, then find their parent. Use display: grid; on that parent. Also, here are a couple of good resources to help you with CSS Grid: CSS-Tricks Guide to Grid and Grid Garden.
+ 
+ 5. You should be able to solve all of these positioning problems without modifying the HTML. If you find yourself tempted to tweak the HTML, you are probably working too hard.
+ 
+ 6. If you are struggling with an activity, start by simply making the boxes the right size and shape. It will often help you to see where to go next.
