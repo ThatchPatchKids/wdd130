@@ -83,7 +83,7 @@ body {
     /*Setting a background color for the entire page?*/
     background-color: #fcfbfb;
     /*Set the font for the body.*/
-    font-family: ;
+    font-family: sans-serif, Verdana, 'Trebuchet MS';
     /*Set the font size for the whole page.*/
     font-size: 22px;
     /*Get rid of the browsers default margin. Reset the property by setting it to zero.*/
@@ -214,7 +214,7 @@ footer {
     /*Set the font color.*/
     color: black;
     /*Set the font using the headlines font.*/
-    font-family: sans-serif;
+    font-family: sans-serif, Verdana, 'Trebuchet MS';
     /*Set the font size to twice as big as our pages default font size.*/
     font-size: 2em;
     /*Using margin to space out the content on the page beyond the borders of the elements. 
@@ -235,7 +235,7 @@ h4 {   /*We have two rules applying to this element, should we change this?*/
     /*Set the font color.*/
     color: white;
     /*Set the font using the headlines font.*/
-    font-family: sans-serif;
+    font-family: sans-serif, Verdana, 'Trebuchet MS';
 }
 
 /*CSS ruleset for the <p> child element of the <section class="msg"> parent element.
