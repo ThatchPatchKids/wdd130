@@ -424,6 +424,44 @@ nav {
 }
 
 
+/* Styles for rivers.html */
+
+.rivers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.rivers-msg {
+  background-color: #6f7364;
+  line-height: 1.5em;
+  padding: 35px;
+}
+
+.button-box2 {
+  text-align: center;
+}
+
+.rivers-img {
+  border: 10px solid #d9c2a3;
+  width: 80%;
+  transition: transform .5s;
+  justify-self: center;
+  margin: 20px;
+  /* box-shadow: 5px 5px 10px #6f7364; */
+}
+
+main div section p {
+  color: white;
+  font-size: 0.8em;
+  padding-bottom: 15px;
+}
+
+main div section h2 {
+  color: white;
+  font-family: sans-serif, Verdana, 'Trebuchet MS';
+}
+
+
 /*Make the page more responsive by adding a media query to it. This allows the page's CSS to change
   based on the width of the browser window. Media queries need to be after all the other CSS! Dont add
   CSS after the media query later either!*/
