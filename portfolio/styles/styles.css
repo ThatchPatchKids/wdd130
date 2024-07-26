@@ -88,6 +88,10 @@ nav a:hover {
     height: auto;
 }
 
+footer {
+    text-align: center;
+}
+
 /* Styles for the Projects page */
 
 #projects {
