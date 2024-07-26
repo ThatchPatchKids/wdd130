@@ -26,8 +26,8 @@ header h1 {
 }
 
 .logo {
-    width: 100px;
-    height: auto;
+    width: 60%;
+    height: 60%;
 }
 
 nav {
@@ -122,8 +122,8 @@ nav a:hover {
 }
 
 #project-img img {
-    width: 65%;
-    height: 65%;
+    width: 80%;
+    height: 80%;
 }
 
 #project-img p {
