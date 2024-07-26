@@ -121,6 +121,11 @@ nav a:hover {
     margin-top: 50px;
 }
 
+#project-img img {
+    width: 80%;
+    height: 80%;
+}
+
 #project-img p {
     color: #0A0A0B;
     font-family: Lato, Helvetica, sans-serif;
